@@ -17,7 +17,9 @@ public class AdjacencyMatrix {
         nodes.put(c, index++);
         edges.add(new ArrayList<>());
         for (int i = 0; i < edges.size(); i++) {
-            edges.get(edges.size()-1).add(-1);
+            edges.get(index-1).add(-1);
+        }
+        for (int i = 0; i < edges.size()-1; i++) {
             edges.get(i).add(-1);
         }
     }
