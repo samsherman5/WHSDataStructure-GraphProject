@@ -1,13 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class DAG {
+public class DAG{
     public List<Character> nodes;
     public List<DAGEdge> edges;
 
     public DAG(){
         nodes = new ArrayList<>();
         edges = new ArrayList<>();
+    }
+
+    public boolean hasNode(Character c){
+        return nodes.contains(c);
     }
 
     public void addNode(Character c){
